@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>NSC</th>
+        <th>Email</th>
+        <th>Classroom</th>
+    </tr>
+    {% for s in ss%}
+    <tr>
+        <td>{{s.nsc}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.classroom.name}}</td>
+    </tr>
+    {% endfor %}
+</table>
